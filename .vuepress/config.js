@@ -16,7 +16,10 @@ module.exports={
             ],
             '/blog/':[
                 '',
+<<<<<<< HEAD
     
+=======
+>>>>>>> 7455a6428b8e1c95cbc392c4848ac012bfa458fa
             ]
         }
     }
