@@ -14,7 +14,7 @@ module.exports={
                 'frontend',
                 'backend'
             ],
-            '/bolg/':[
+            '/blog/':[
                 '',
             ]
         }
