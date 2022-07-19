@@ -1,10 +1,11 @@
 module.exports={
-    title:'Grrow Training',
+    title:'Grrow Blog',
     description:'Design Your Project',
     themeConfig:{
         nav:[
             {text:'Home',link:'/'},
             {text:'docs',link:'/docs/'},
+            {text:'blog',link:'/blog/'},
             {text:'About me',link:'https://github.com'},
         ],
         sidebar:{
@@ -12,6 +13,10 @@ module.exports={
                 '',
                 'frontend',
                 'backend'
+            ],
+            '/blog/':[
+                '',
+    
             ]
         }
     }
