@@ -17,6 +17,7 @@ jobs:
           git config user.email chamara@grrow.jp
           git add .
           git commit -m "README.md"
-          git submodule update --init
+          git pull --recurse-submodules
+          git submodule foreach --recursive git reset --hard
           git push
         if: steps.changes.outputs.count > 0
