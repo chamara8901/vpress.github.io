@@ -9,8 +9,7 @@ jobs:
         with:
           node-version: '14'
       - run: |
-          npm install && npm run build
-          git add -N .
+          npm install && npm run build 
           echo "::set-output name=count::$(git diff --name-only | wc -l)"
       - name: commit & push
         run: |
