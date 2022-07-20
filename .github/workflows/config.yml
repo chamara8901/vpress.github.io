@@ -8,14 +8,4 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: |
-          npm install && npm run build 
-          echo "::set-output name=count::$(git diff --name-only | wc -l)"
-      - name: commit & push
-        run: |
-          git config user.name chamara8901
-          git config user.email chamara@grrow.jp
-          git add .
-          git commit -m "README.md"
-          git push
-        if: steps.changes.outputs.count > 0
+      - run: npm install && npm run build 
