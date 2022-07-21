@@ -16,7 +16,8 @@ module.exports={
             ],
             '/blog/':[
                 '',
-            ]
+            ],
+
         }
     }
 }
