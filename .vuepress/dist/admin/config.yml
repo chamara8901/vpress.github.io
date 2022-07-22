@@ -1,8 +1,6 @@
 backend:
   name: git-gateway
-  accept_roles:
-    - admin
-  branch: mater
+  branch: master
 media_folder: ".vuepress/public/"
 public_folder: "../../"
 display_url: https://vpsample.netlify.app
