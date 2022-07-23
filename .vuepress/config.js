@@ -14,12 +14,12 @@ module.exports={
                 'frontend',
                 'backend'
             ],
-            '/blog/':[
+            '/blog/posts/':[
                 '',
             ],
         plugins: [
                 [
-                  "/blog/",
+                  "/blog/posts/",
                   {
                     directories: [
                       {
