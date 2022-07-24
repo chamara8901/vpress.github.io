@@ -5,7 +5,7 @@ module.exports={
         nav:[
             {text:'Home',link:'/'},
             {text:'docs',link:'/docs/'},
-            {text:'/blog/posts/',link:'/blog/posts/'},
+            {text:'blog',link:'/blog/posts/'},
             {text:'About me',link:'https://github.com'},
         ],
         sidebar:{
@@ -14,8 +14,8 @@ module.exports={
                 'frontend',
                 'backend'
             ],
-            '/blog/posts/':[
-                '',
+            '/blog/':[
+                'posts',
             ],
         plugins: [
                 [
