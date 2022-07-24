@@ -15,7 +15,7 @@ module.exports={
                 'backend'
             ],
             '/blog/':[
-                'posts',
+                '',
             ],
         plugins: [
                 [
