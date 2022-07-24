@@ -19,7 +19,7 @@ module.exports={
             ],
         plugins: [
                 [
-                  "/blog/posts/",
+                  "/blog/",
                   {
                     directories: [
                       {
