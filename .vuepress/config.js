@@ -19,19 +19,19 @@ module.exports={
             ],
         plugins: [
                 [
-                "/blog/",
-                {
-                directories:[
-                            {
-                            id: "posts",
-                            dirname: "posts",
-                            path: "/bolg/posts/*.md",
-                            itemPermalink: "/posts/:slug"
-                            }
-                        ]
-                    }
+                  "/blog/",
+                  {
+                    directories: [
+                      {
+                        id: "posts",
+                        dirname: "posts",
+                        path: "/blog/posts/*.md",
+                        itemPermalink: "/posts/:slug"
+                      }
+                    ]
+                  }
                 ]
-            ]
+              ]
         }
     }
 }
