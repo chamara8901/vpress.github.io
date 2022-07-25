@@ -1,5 +1,5 @@
 ---
-title: all posts
+title: Posts
 ---
 
 # All posts
