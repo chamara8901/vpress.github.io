@@ -14,18 +14,18 @@ module.exports={
                 'frontend',
                 'backend'
             ],
-            '/blog/posts':[
+            '/blog/':[
                 '',
             ],
         plugins: [
                 [
-                  "/blog/posts",
+                  "/blog/",
                   {
                     directories: [
                       {
-                        id: "blog",
-                        dirname: "blog",
-                        path: "/blog/posts/*.md",
+                        id: "posts",
+                        dirname: "posts",
+                        path: "/bolg/posts/*.md",
                         itemPermalink: "/posts/:slug"
                       }
                     ]
