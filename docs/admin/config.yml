@@ -1,11 +1,11 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: mater
 media_folder: ".vuepress/public/"
 public_folder: "../../"
 display_url: https://vpsample.netlify.app
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+  - name: "doc" # Used in routes, e.g., /admin/collections/blog
     label: "blog" # Used in the UI
     folder: "blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
