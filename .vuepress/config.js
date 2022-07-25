@@ -25,7 +25,7 @@ module.exports={
                       {
                         id: "posts",
                         dirname: "posts",
-                        path: "/bolg/posts/*.md",
+                        path: "/blog/posts/*.md",
                         itemPermalink: "/posts/:slug"
                       }
                     ]
