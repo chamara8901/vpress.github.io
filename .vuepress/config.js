@@ -17,21 +17,6 @@ module.exports={
             '/blog/':[
                 '',
             ],
-        plugins: [
-                [
-                  "/blog/",
-                  {
-                    directories: [
-                      {
-                        id: "posts",
-                        dirname: "posts",
-                        path: "/blog/posts/*.md",
-                        itemPermalink: "/posts/:slug"
-                      }
-                    ]
-                  }
-                ]
-              ]
         }
     }
 }
