@@ -14,9 +14,6 @@ module.exports={
                 'frontend',
                 'backend'
             ],
-            '/blog/':[
-                '',
-            ],
         }
     }
 }
