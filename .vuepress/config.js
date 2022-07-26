@@ -5,7 +5,6 @@ module.exports={
         nav:[
             {text:'Home',link:'/'},
             {text:'docs',link:'/docs/'},
-            {text:'blog',link:'/blog/'},
             {text:'categories',link:'/categories/'},
             {text:'about me',link:'https://github.com'},
         ],
