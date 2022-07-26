@@ -1,5 +1,9 @@
 name: config.yml
-on: [push]
+on:
+  push:
+    branches:
+    - 'master'
+    name: deploy
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
@@ -9,3 +13,15 @@ jobs:
         with:
           node-version: '14'
       - run: npm install && npm run build 
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: chamara8901
+          author_email: chamara@grrow.jp
+          message: 'Your commit message'
+           run: |
+              git checkout gh-pages
+              git add .
+              git commit -m "Add"
+              git pull
+              git push origin gh-pages
