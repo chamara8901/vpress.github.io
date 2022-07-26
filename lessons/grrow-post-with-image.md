@@ -1,7 +1,7 @@
 ---
 title: Grrow post with image
 description: Image Testing
-image: ../../download.png
+image: ""
 date: 2022-07-26T05:49:48.795Z
 categories:
   - lessons
