@@ -20,5 +20,3 @@ jobs:
               git checkout gh-pages
               git add .
               git commit -m "Add"
-              git pull
-              git push origin gh-pages
