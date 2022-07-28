@@ -9,10 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
+        uses: actions/checkout@v2
+      - run: npm install && npm run build 
+
+      - name: Checkout code
         uses: actions/checkout@v3
         with:
           ref: gh-pages
-      - run: npm install && npm run build 
+
       - name: Commit 
         # with:
         #   author_name: chamara8901
