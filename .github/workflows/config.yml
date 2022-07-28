@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
       - run: npm install && npm run build 
       - name: Commit 
         # with:
@@ -19,9 +21,6 @@ jobs:
         run: |
             git config user.name chamara8901
             git config user.email chamara@grrow.jp
-            git config pull.rebase true
-            git checkout -b gh-pages
-            git pull origin gh-pages
             git add .
             git commit -m "Update"
             git push
