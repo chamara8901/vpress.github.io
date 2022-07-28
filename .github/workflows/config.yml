@@ -23,9 +23,9 @@ jobs:
         #   author_email: chamara@grrow.jp
         #   message: 'Your commit message'
         run: |
-            # git config user.name chamara8901
-            # git config user.email chamara@grrow.jp
             git add .
+            git config user.name chamara8901
+            git config user.email chamara@grrow.jp
             git commit -m "Update"
             git push
           
