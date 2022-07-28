@@ -17,7 +17,7 @@ jobs:
         #   author_email: chamara@grrow.jp
         #   message: 'Your commit message'
         run: |
-         
+            git checkout gh-pages
             git config user.name chamara8901
             git config user.email chamara@grrow.jp
             git add .
