@@ -17,12 +17,11 @@ jobs:
         #   author_email: chamara@grrow.jp
         #   message: 'Your commit message'
         run: |
-            git branch
-
-            # git checkout gh-pages
-            # git config user.name chamara8901
-            # git config user.email chamara@grrow.jp
-            # git add .
-            # git commit -m "Update"
-            # git push
+            git config user.name chamara8901
+            git config user.email chamara@grrow.jp
+            git checkout -b gh-pages
+            git pull origin gh-pages
+            git add .
+            git commit -m "Update"
+            git push
           
