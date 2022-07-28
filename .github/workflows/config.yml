@@ -1,31 +1,36 @@
-name: config.yml
-on:
-  push:
-    branches:
-    - 'master'
-    name: deploy
-jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - run: npm install && npm run build 
+# name: config.yml
+# on:
+#   push:
+#     branches:
+#     - 'master'
+#     name: deploy
+# jobs:
+#   check-bats-version:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
+#       - run: npm install && npm run build 
 
-      - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          ref: gh-pages
+#       - name: Checkout code
+#         uses: actions/checkout@v3
+#         with:
+#           ref: gh-pages
 
-      - name: Commit 
-        # with:
-        #   author_name: chamara8901
-        #   author_email: chamara@grrow.jp
-        #   message: 'Your commit message'
-        run: |
-            git add .
-            git config user.name chamara8901
-            git config user.email chamara@grrow.jp
-            git commit -m "Update"
-            git push
+#       - name: Commit 
+     
+#         run: |
+#             git add .
+#             git config user.name chamara8901
+#             git config user.email chamara@grrow.jp
+#             git commit -m "Update"
+#             git push 
+
+
+
+
+#                # with:
+#         #   author_name: chamara8901
+#         #   author_email: chamara@grrow.jp
+#         #   message: 'Your commit message'
           
