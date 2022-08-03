@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    категория:
+    Documents:
     <router-link
       v-for="category in $page.frontmatter.categories"
       :key="category"
