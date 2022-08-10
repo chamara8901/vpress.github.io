@@ -39,10 +39,13 @@ jobs:
         run: npm ci
       - name: Build with VuePress
         run: npm run build
+      - name: fix path
+        run: bash bin/replace_path.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./.vuepress/dist
+      
 
   # Deployment job
   deploy:
@@ -55,3 +58,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+
