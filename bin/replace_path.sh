@@ -2,7 +2,7 @@
 
 find .vuepress/dist -name '*.html' | while read htmlfile; do
   sed -i .bak \
-    -e "s|<img src=\"//|<img src=\"https://chamara8901.github.io/vpress.github.io/|g" \
+    -e "s|<img src=\"/|<img src=\"https://chamara8901.github.io/vpress.github.io/|g" \
     -e "s|<a href=\"/|<a href=\"https://chamara8901.github.io/vpress.github.io/|g" \
     -e "s|href=\"/assets/|href=\"https://chamara8901.github.io/vpress.github.io/assets/|g" \
     "${htmlfile}"
